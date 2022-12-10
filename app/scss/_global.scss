@@ -9,6 +9,8 @@ html{
 
 a {
     display: inline-block;
+    text-decoration: none;
+    color: $text;
 }
 
 Ul,
@@ -19,7 +21,10 @@ li {
 }
 
 body {
-
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: $text;
 }
 
 .container {
