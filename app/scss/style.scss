@@ -14,6 +14,7 @@
 .header__text {
     margin-left: auto;
     margin-right: 50px;
+
     span {
         color: $red;
     }
@@ -21,17 +22,17 @@
 
 
 .header__btn {
-padding: 4px;
-width: 72px;
-border-radius: 4px;
-text-align: center;
-color: #fff;
-font-size: 12px;
+    padding: 4px;
+    width: 72px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
 
 }
 
 .header__btn-login {
-background-color: $green;
+    background-color: $green;
 }
 
 .header__btn-register {
@@ -53,10 +54,12 @@ background-color: $green;
 .menu__list {
     li {
         display: inline-block;
-        & + li {
+
+        &+li {
             margin-left: 30px;
         }
     }
+
     a {
         color: #fff;
         font-size: 14px;
@@ -78,22 +81,26 @@ background-color: $green;
     padding: 155px 0px 100px;
     color: #fff;
     text-align: center;
+
     &-title {
         margin-bottom: 10x;
         font-size: 48px;
         font-weight: 700;
         line-height: 72px;
     }
+
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
         font-weight: 500;
         line-height: 30px;
     }
+
     &-form {
         max-width: 670px;
         margin: 0 auto;
         position: relative;
+
         input {
             display: block;
             width: 100%;
@@ -105,6 +112,7 @@ background-color: $green;
             outline: none;
             padding-left: 25px;
             padding-right: 60px;
+
             &:focus {
                 border: 3px solid $green;
             }
@@ -114,6 +122,7 @@ background-color: $green;
                 font-weight: 500;
             }
         }
+
         button {
             position: absolute;
             border: none;
@@ -130,10 +139,85 @@ background-color: $green;
 //start products
 
 .products {
-padding: 110px 0;
+    padding: 110px 0;
+    background-color: $grey;
+}
+
+.products__inner-btn {
+    text-align: center;
+    margin-bottom: 60px;
+
+    button {
+        padding: 12px 21px;
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        cursor: pointer;
+
+        &+button {
+            margin-left: 5px;
+        }
+    }
+}
+
+.product__item {
+    max-width: 442px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+
+&-img {
+        min-height: 232px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
 
 }
 
-.prodects__title {
+ &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        align-items: center;
+        min-height: 90px;
+        font-weight: 500;
+        border-bottom: 1px solid #e7ecf2;
+}
+
+&-name {
+        min-width: 310px;
+}
+
+&-title {
+        display: block;
+        color: $bg;
+        line-height: 60px;
+        font-size: 18px;
+}
+
+&-category {
+    font-size: 14px;
+    color: $green;
+        display: block;
+}
+&-price {
+    font-size: 20px;
     color: $bg;
+    font-weight: 700;
 }
+&-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 30px;
+
+}
+&-author {
+    
+}
+}
+
+
+
+//end products
