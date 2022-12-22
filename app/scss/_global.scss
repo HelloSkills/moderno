@@ -1,9 +1,10 @@
-html{
+html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
 
@@ -39,33 +40,19 @@ body {
     padding: 0 35px;
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
     .container-fluid {
         padding: 0 15px;
-    }   
+    }
 }
 
 .title {
     text-align: center;
     color: $bg;
-    font-weight: 700;
+    @include f700;
     font-size: 36px;
     line-height: 60px;
     margin-bottom: 30px;
 
 }
 
-.title {
-    text-align: center;
-    color: $bg;
-    font-weight: 700;
-    font-style: 36px;
-    line-height: 60px;
-    margin-bottom: 30px;
-
-}
-
-.rate-star {
-    display: inline-block;
-    margin-right: 13px;
-}
