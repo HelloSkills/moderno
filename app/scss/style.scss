@@ -242,7 +242,7 @@
         max-width: 245px;
 
         .avatar {
-            width: 30px;
+            min-width: 30px;
             height: 30px;
             border-radius: 50%;
             background-position: center;
@@ -668,6 +668,7 @@
 
 .product-page__inner {
 display: flex;  
+padding-bottom: 110px;
 }
 
 .product-page__aside {
@@ -720,4 +721,264 @@ color: $bg;
 
 }
 
+.price-range {
+    form {
+       padding-top: 20px;
+    }
+
+    button {
+        margin-top: 55px;
+        padding: 16px 10px;
+        background-color: $freen;
+        text-align: center;
+        color: #fff;
+        @include f500;
+        width: 100%;
+        display: block;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: "\f002";
+            font-family: "icomoon";
+            color: #fff;
+            position: absolute;
+            left: 58px;
+            top: 15px;
+            font-size: 15px;
+            font-family: 'icomoon';
+        }
+        }
+    }
+}
+
+.irs-min,
+.irs-max {
+    display: none;
+}
+
+.irs--flat .irs-line {
+    background-color: #f2f5f8;
+    height: 5px;
+}
+
+.irs--flat .irs-bar {
+    background-color: $bg;
+    height: 5px;
+}
+
+.irs--flat .irs-handle {
+    width: 16px;
+    height: 16px;
+    border: 4px solid $green;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+
+.irs-from, .irs-single, .irs-to {
+    top:45px;
+
+}
+
+.irs--flat .irs-from:before, .ifs--flat .irs-single:before, .irs--flat .irs-to:before{
+display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+    color: #78909c;
+    font-size: 15px;
+    line-height: 1.333;
+    text-shadow: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0px;
+
+}
+
+.irs--flat .irs-handle {
+    top: 19px;
+
+}
+
+.product-page__aside {
+
+.product__item-img {
+    min-height: 120;
+
+}
+
+.product__item {
+    box-shadow: none;
+}
+
+.product__item-content {
+    padding: 0;
+    min-height: 75px;
+    border-bottom: none;
+
+}
+
+.product__item-info {
+    padding: 0;
+    min-height: 0;
+}
+
+.product__item-title {
+    font-size: 16px;
+
+}
+
+.product__item-price {
+    font-size: 16px;
+}
+
+.product__item-starnum {
+display: none;
+}
+
+.rate-star {
+    margin-right: 0;
+}
+
+}
+
+.product__item-author .avatar {
+    margin-right: 9px;
+}
+
+.jq-ry-container {
+    padding: 0;
+}
+
+.product__item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dde3e8;
+}
+
+.aside__product-item {
+    .product__item:last-child {
+        border: none;
+        padding-bottom: 0;
+    }
+
+    .product__item:first-child {
+        margin-top: 25px;
+    }
+}
+
+.top-sellers__link {
+    padding: 16px 10px;
+    display: block;
+    background-color: $green;
+    color: #fff;
+    @include f500;
+    text-align: center;
+
+}
+
+.product-page__filter {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 0 32px 32px;
+    margin-bottom: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        color: #90a4ae;
+        &.active {
+            color: $green;
+        }
+    }
+
+}
+
+.product-page__filter-sort {
+    color: #707070;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+button.product-page__amount-desc {
+font-size: 18px;
+color: #455a64;
+}
+
+button.icon-unsorted {
+    font-size: 14px;
+    color: #707070;
+}
+
+.product-page__content {
+    width: 100%;
+.product__item {
+  max-width: 270px;  
+  background-color: #fff;
+}
+
+.product__atem-img {
+    min-height: 180px;
+}
+
+.product__item-content {
+    padding: 10px 20px;
+}
+
+.product__item-title {
+font-size: 16px;
+}
+
+.product__item-info {
+    min-height: 65px;
+    padding: 10px 20px;
+
+}
+
+.jr-ry-container {
+    padding: 0;
+}
+
+.product-page__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.pagination__list {
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 6px;
+        }
+    }
+    a, span {
+        width: 43px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        font-size: 16px;
+        color: $bg;
+        @include f500;
+        &.active {
+            background-color: $red;
+            color: #fff;
+        }
+    }
+}
+
+}
 // end product-page
