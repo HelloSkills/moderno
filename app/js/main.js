@@ -8,16 +8,31 @@ $(function () {
 
     });
 
-
     
-    $("#demo_0").ionRangeSlider({
-        min: 100,
-        max: 1000,
-        from: 550
+    $("#example_id").ionRangeSlider({
+        min: 0,
+        max: 100,
+        from: 50
     });
-    
-    
-    $("#example_id").ionRangeSlider();
+
+// Start Дописываем и стираем класс List к иконкам + класс active
+
+$('.icon-th-list').on('click', function(){
+    $('.product__item').addClass('list');
+    $('.icon-th-list').addClass('active');
+    $('.icon-th-large').removeClass('active');
+});
+
+$('.icon-th-large').on('click', function(){
+    $('.product__item').removeClass('list');
+    $('.icon-th-large').addClass('active');
+    $('.icon-th-list').removeClass('active');
+});
+
+// End Дописываем и стираем класс List к иконкам + класс active
+
+
+
 
     var mixer = mixitup('.products__inner-box');
 
