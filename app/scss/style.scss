@@ -35,7 +35,7 @@
     background-color: $green;
 }
 
-.header__btn-register {
+.header__btn-register, .header__btn-logout {
     background-color: $red;
     margin-left: 7px;
 }
@@ -63,6 +63,164 @@
     a {
         color: #fff;
         font-size: 14px;
+    }
+}
+
+.header__circle {
+&.active {
+    display: block;
+}
+    display: none;
+position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #a0a0a0;
+        font-size: 14px;
+        
+    }
+    & + .header__circle {
+        margin-left: 15px;
+    }
+
+    span {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        right: -7px;
+        top: -7px;
+        font-size: 11px;
+        color: #fff;
+
+    }
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+}
+
+.notification {
+    span {
+background-color: $yellow;
+    }
+}
+
+.message {
+    span {
+        background-color: $tomate;     
+    }
+}
+
+.basket {
+    span {
+        background-color: $green;    
+    }
+}
+
+.header__btn-login--off {
+    display: none;
+}
+
+.header__btn-logout {
+    display: none;
+    &.header__btn-login--on {
+        display: block;
+    } 
+}
+
+.user{
+margin-left: 20px;
+margin-right: 25px;
+padding-right: 20px;
+position: relative;
+&::before {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 16px;
+    color: #707070;
+    top: 0;
+    right: 0;
+    transform: rotateZ(90deg);
+}
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__images {
+        margin-right: 15px;
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border-radius: 50%;
+
+    }
+
+    &__info {
+        font-size: 14px;
+       line-height: 24px;
+    }
+
+    &__name {
+@include f500;
+color: #222;
+
+    }
+
+    &__money {
+       color: $green;
+       @include f700;
+    }
+}
+
+
+
+.user__menu {
+    top: 90px;
+    left:20px;
+    border: 0px solid rgb(204, 204, 204);
+    position: absolute;
+    background-color: #fff;
+    padding: 0 20px;
+    width: 158px;
+    transition: all .3s;
+    height: 0;
+    overflow: hidden;
+
+
+    a {
+        font-size: 12px;
+        color: #546e7a;
+        margin-bottom: 15px;
+        
+
+    }
+}
+
+.user__box {
+    position: relative;
+    padding: 21px 0;
+    // height: 90px;
+    // margin-top: 42px;
+    &:hover {
+        .user__menu{
+            height: auto;
+            border-width: 1px;
+            padding: 20px;
+            overflow: auto;
+        }
+
     }
 }
 
@@ -1023,12 +1181,18 @@ button.icon-unsorted {
                 padding-left: 50px;
                 padding-right: 30px;
 
+
                 span {
                     color: $bg;
                     @include f500;
                 }
+               
             }
         
+        }
+    
+       a {
+            padding-left: 40px;
         }
 
         .icon-heart-o {
