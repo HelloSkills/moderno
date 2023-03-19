@@ -212,13 +212,13 @@
     }
 }
 
-.basket__menu {
+.circle__menu {
     position: absolute;
     top: 69px;
 }
 
 .user__box,
-.basket__box {
+.basket__box, .message__box, .notification__box {
     position: relative;
     // padding: 21px 0;
     height: 90px;
@@ -235,7 +235,7 @@
     }
 }
 
-.basket__menu {
+.circle__menu {
     border-top: 1px solid #e0e0e0;
     top: 62px;
     right: 0;
@@ -244,13 +244,13 @@
     transition: all .3s;
 }
 
-.basket__box {
+.basket__box, .message__box, .notification__box {
     margin-top: 54px;
     margin-left: 15px;
     &:hover {
-        .basket__menu {
+        .circle__menu {
             overflow: auto;
-            height: 100%;
+            height: auto;
         }
     }
 }
@@ -259,7 +259,7 @@
 
 
 
-.basket__item {
+.circle__item {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     border-top: none;
@@ -270,21 +270,21 @@
 
 }
 
-.basket__images {
+.circle__images {
     margin-right: 15px;
 }
 
-.basket__info-name {
+.circle__info-name {
     @include f500;
     color: $bg;
 }
 
-.basket__info-theme {
+.circle__info-theme {
     color: $green;
     font-size: 12px;
 }
 
-.basket__info-price {
+.circle__info-price {
     @include f500;
     color: #000;
     font-size: 16px;

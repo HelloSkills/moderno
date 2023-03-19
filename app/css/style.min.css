@@ -522,26 +522,26 @@ body {
   margin-bottom: 15px;
 }
 
-.basket__menu {
+.circle__menu {
   position: absolute;
   top: 69px;
 }
 
 .user__box,
-.basket__box {
+.basket__box, .message__box, .notification__box {
   position: relative;
   height: 90px;
   margin-top: 42px;
 }
 .user__box:hover .user__menu,
-.basket__box:hover .user__menu {
+.basket__box:hover .user__menu, .message__box:hover .user__menu, .notification__box:hover .user__menu {
   height: auto;
   border-width: 1px;
   padding: 20px;
   overflow: auto;
 }
 
-.basket__menu {
+.circle__menu {
   border-top: 1px solid #e0e0e0;
   top: 62px;
   right: 0;
@@ -552,16 +552,16 @@ body {
   transition: all 0.3s;
 }
 
-.basket__box {
+.basket__box, .message__box, .notification__box {
   margin-top: 54px;
   margin-left: 15px;
 }
-.basket__box:hover .basket__menu {
+.basket__box:hover .circle__menu, .message__box:hover .circle__menu, .notification__box:hover .circle__menu {
   overflow: auto;
-  height: 100%;
+  height: auto;
 }
 
-.basket__item {
+.circle__item {
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-top: none;
@@ -575,22 +575,22 @@ body {
   width: 269px;
 }
 
-.basket__images {
+.circle__images {
   margin-right: 15px;
 }
 
-.basket__info-name {
+.circle__info-name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #263238;
 }
 
-.basket__info-theme {
+.circle__info-theme {
   color: #8bc34a;
   font-size: 12px;
 }
 
-.basket__info-price {
+.circle__info-price {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #000;
